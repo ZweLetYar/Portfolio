@@ -12,7 +12,7 @@ function HeroSection() {
             <TypewriterText text={"Zwe Let Yar"} />
           </span>
         </h1>
-        <h3 className="text-lg text-[#A0A0A0]">
+        <h3 className="text-lg text-[#D0D0D0]">
           Full-Stack Developer & <br></br>
           Creative Problem Solver.
         </h3>
