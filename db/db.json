@@ -19,6 +19,7 @@
       "description": "A modern, mobile-friendly forum app for topic-based discussions. Features real-time updates, user profiles, categories, and a clean, responsive UI.",
       "technologies": [
         { "name": "Next.js", "logo": "/next.png" },
+        { "name": "TypeScript", "logo": "/typescript-svgrepo-com.svg" },
         { "name": "Tailwind", "logo": "/tailwindcss-mark.d52e9897.svg" }
       ],
       "liveDemo": "#",
