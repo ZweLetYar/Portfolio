@@ -52,7 +52,7 @@ async function ProjectCards() {
                         alt={t.name}
                         height={15}
                         width={15}
-                        className="rounded-full"
+                        className="rounded-lg"
                       />
                       <h2 className="text-[#00FFF0]">{t.name}</h2>
                     </div>

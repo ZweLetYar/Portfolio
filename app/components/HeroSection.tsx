@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TypewriterText from "./TypeWriterText";
+import "./style.css";
 
 function HeroSection() {
   return (
@@ -16,11 +17,11 @@ function HeroSection() {
           Full-Stack Developer & <br></br>
           Creative Problem Solver.
         </h3>
-        <div className="flex gap-2 items-center justify-center text-sm">
-          <button className="text-center border border-[#00FFF0] rounded-lg px-3 py-2 cursor-pointer hover:bg-[#00FFF0] hover:text-[#0F1115]">
+        <div className="flex gap-4 items-center justify-center text-sm">
+          <button className="glowingBtn text-center rounded-xl  cursor-pointer ">
             View Projects
           </button>
-          <button className="text-center border border-[#A0A0A0] rounded-lg px-3 py-2 cursor-pointer hover:bg-[#00FFF0] hover:text-[#0F1115]">
+          <button className=" text-center border border-[#A0A0A0] rounded-xl px-4 py-2 cursor-pointer hover:bg-[#00FFF0] hover:text-[#0F1115]">
             Contact
           </button>
         </div>
