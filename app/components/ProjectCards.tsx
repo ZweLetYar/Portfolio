@@ -12,7 +12,7 @@ async function ProjectCards() {
   const projects = await res.json();
 
   return (
-    <div className="flex items-center gap-4 w-[80%] my-15">
+    <div className="flex items-center gap-4 w-[80%] mt-15">
       {Array.isArray(projects) &&
         projects.map(
           (p: {
