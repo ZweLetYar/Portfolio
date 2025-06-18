@@ -28,10 +28,11 @@ function HeroSection() {
       </div>
       <div className="w-1/2 flex flex-col items-center justify-end">
         <Image
-          src="/profileRemoveBg.png"
+          src="/realMe.png"
           alt="profile"
           height={300}
-          width={300}
+          width={280}
+          quality={100}
         />
       </div>
     </div>
