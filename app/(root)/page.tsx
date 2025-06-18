@@ -11,7 +11,7 @@ function page() {
     <div className="text-white flex flex-col items-center bg-[#0e1313]">
       <HeroSection />
       <div className=" w-full bg-[#0a0f0f] flex flex-col items-center ">
-        <div className="flex items-center justify-center w-[80%] mt-8 gap-5">
+        <div className="flex items-center justify-center h-80 w-[80%] mt-8 gap-5">
           <About />
 
           <SkillChart />

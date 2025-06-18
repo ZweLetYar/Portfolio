@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import "./style.css";
 
 async function About() {
   const res = await fetch("http://localhost:3001/skills", {
@@ -11,7 +12,7 @@ async function About() {
   const skills = await res.json();
 
   return (
-    <div className=" flex flex-col justify-center  w-1/2 gap-4">
+    <div className="flex flex-col justify-center w-1/2 gap-4 about-container">
       <h1 className="text-lg font-semibold">About me</h1>
       <p className="text-sm text-[#D0D0D0]">
         I specialize in creating visually appealing and user-friendly websites.
@@ -21,16 +22,15 @@ async function About() {
         expectations.
       </p>
       <div className="flex gap-3">
-        {skills.map((skill: { name: string; icon: string }) => {
-          return (
-            <div
-              key={skill.name}
-              className="flex items-center justify-center w-12 h-12 rounded-md bg-[#1A1D22] "
-            >
-              <Image src={skill.icon} alt={skill.name} height={25} width={25} />
-            </div>
-          );
-        })}
+        {skills.map((skill: { name: string; icon: string }, index: number) => (
+          <div
+            key={skill.name}
+            className={`flex items-center justify-center w-12 h-12 rounded-md bg-[#1A1D22] skill-icon`}
+            style={{ animationDelay: `${0.7 + index * 0.1}s` }}
+          >
+            <Image src={skill.icon} alt={skill.name} height={25} width={25} />
+          </div>
+        ))}
       </div>
     </div>
   );
