@@ -30,9 +30,9 @@ function HeroSection() {
         <Image
           src="/realMe.png"
           alt="profile"
-          height={300}
-          width={280}
-          className="lg:h-[400px] lg:w-[350px]"
+          height={400}
+          width={350}
+          className="lg:h-[500px] lg:w-[450px]"
           quality={100}
         />
       </div>

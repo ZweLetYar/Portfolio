@@ -21,7 +21,6 @@ export const projects = [
     technologies: [
       { name: "Next.js", logo: "/next.png" },
       { name: "TypeScript", logo: "/typescript-svgrepo-com.svg" },
-      { name: "Tailwind", logo: "/tailwindcss-mark.d52e9897.svg" },
     ],
     liveDemo: "#",
     github: "https://github.com/ZweLetYar/Forum",
