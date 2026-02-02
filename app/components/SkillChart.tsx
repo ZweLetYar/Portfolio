@@ -25,7 +25,7 @@ const SkillChart = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-4 text-white w-1/2">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 p-4 text-white w-full lg:w-1/2">
       {visible &&
         skills.map((skill, index) => (
           <div
@@ -33,7 +33,7 @@ const SkillChart = () => {
             className="flex flex-col items-center skill-chart-item animate"
             style={{ animationDelay: `${index * 0.7}s` }}
           >
-            <div className="w-24 h-24">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24">
               <CircularProgressbar
                 value={skill.value}
                 text={`${skill.value}%`}
@@ -41,10 +41,11 @@ const SkillChart = () => {
                   textColor: "#fff",
                   pathColor: skill.color,
                   trailColor: "#2A2A2A",
+                  textSize: "28px",
                 })}
               />
             </div>
-            <p className="mt-2 text-sm">{skill.name}</p>
+            <p className="mt-2 text-xs sm:text-sm text-center">{skill.name}</p>
           </div>
         ))}
     </div>

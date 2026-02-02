@@ -1,0 +1,42 @@
+export const projects = [
+  {
+    id: 1,
+    name: "Moon Cal",
+    image: "/avatar-fashion-female-svgrepo-com.svg",
+    description:
+      "A beautiful, privacy-focused menstrual cycle tracker app. It helps users log symptoms, track their cycle phases, predict upcoming periods, and take control of their reproductive health.",
+    technologies: [
+      { name: "React", logo: "/react-svgrepo-com.svg" },
+      { name: "Firebase", logo: "/firebase-svgrepo-com.svg" },
+    ],
+    liveDemo: "https://period-track-6e2b8.web.app/",
+    github: "https://github.com/ZweLetYar/PeriodTrack",
+  },
+  {
+    id: 2,
+    name: "Dev Talk Forum",
+    image: "/Forumlogo.png",
+    description:
+      "A modern, mobile-friendly forum app for topic-based discussions. Features real-time updates, user profiles, categories, and a clean, responsive UI.",
+    technologies: [
+      { name: "Next.js", logo: "/next.png" },
+      { name: "TypeScript", logo: "/typescript-svgrepo-com.svg" },
+      { name: "Tailwind", logo: "/tailwindcss-mark.d52e9897.svg" },
+    ],
+    liveDemo: "#",
+    github: "https://github.com/ZweLetYar/Forum",
+  },
+  {
+    id: 3,
+    name: "My Money Manager",
+    image: "/MMMlogo.png",
+    description:
+      "A modern, mobile-first personal finance tracker app. It helps users manage income and expenses, switch themes, track currency values, and visualize data through dynamic charts.",
+    technologies: [
+      { name: "React", logo: "/react-svgrepo-com.svg" },
+      { name: "Firebase", logo: "/firebase-svgrepo-com.svg" },
+    ],
+    liveDemo: "https://my-money-manager-47116.web.app/",
+    github: "https://github.com/ZweLetYar/My-Money-Manager",
+  },
+];
