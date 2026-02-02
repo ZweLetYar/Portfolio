@@ -1,0 +1,178 @@
+.glowingBtn {
+  --glow-color: rgb(144, 228, 245);
+  --glow-spread-color: rgba(43, 161, 215, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(59, 113, 170);
+  border: 0.25em solid var(--glow-color);
+  padding: 0.5em 1em;
+  color: var(--glow-color);
+
+  font-weight: bold;
+
+  background-color: var(--btn-color);
+
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.74em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.glowingBtn::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.glowingBtn:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.glowingBtn:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+/* Fade and slide-up animation */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the entire left section with delay steps */
+.hero-container h1,
+.hero-container h3,
+.hero-container .btn-group button {
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+}
+
+/* Individual delays for staggered effect */
+.hero-container h1 {
+  animation-delay: 0.2s;
+}
+
+.hero-container h3 {
+  animation-delay: 0.5s;
+}
+
+.hero-container .btn-group button:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.hero-container .btn-group button:nth-child(2) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About section animations */
+.about-container h1 {
+  animation: fadeInLeft 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.about-container p {
+  animation: fadeInRight 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.about-container .skill-icon {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+.about-container .skill-icon:nth-child(1) {
+  animation-delay: 0.7s;
+}
+.about-container .skill-icon:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.about-container .skill-icon:nth-child(3) {
+  animation-delay: 0.9s;
+}
+/* Add more if you have more skills */
+
+/* Skill chart animation */
+
+@keyframes scaleFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.skill-chart-item.animate {
+  opacity: 0;
+  animation: scaleFadeIn 0.6s ease-out forwards;
+}
+
+.skill-chart-item.animate:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.skill-chart-item.animate:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.skill-chart-item.animate:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.skill-chart-item.animate:nth-child(4) {
+  animation-delay: 0.8s;
+}
