@@ -12,7 +12,7 @@ export default function Education() {
           <div className="space-y-4">
             <div className="text-left">
               <h3 className="text-xl font-semibold mb-2">
-                Yadanabon Cyber City University - Ongoing - Fourth Year
+                Yadanabon Cyber City University - Ongoing - Fifth Year
               </h3>
               <p className="text-gray-400 text-lg">
                 B.E. in Information Science and Technology
