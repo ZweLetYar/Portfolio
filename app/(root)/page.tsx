@@ -15,7 +15,12 @@ function page() {
           <About />
           <SkillChart />
         </div>
-        <ProjectCards />
+        <div
+          id="projects"
+          className="w-[90%] xl:w-[80%] flex flex-col items-center mb-16"
+        >
+          <ProjectCards />
+        </div>
         <div className="flex flex-col lg:flex-row items-start justify-center w-[90%] xl:w-[80%] gap-8 lg:gap-12 mt-16">
           <Education />
           <ContactForm />

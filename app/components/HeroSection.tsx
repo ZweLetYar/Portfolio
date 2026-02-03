@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import TypewriterText from "./TypeWriterText";
@@ -18,7 +20,14 @@ function HeroSection() {
           Creative Problem Solver.
         </h3>
         <div className="flex gap-6 items-center justify-center lg:justify-start text-base btn-group mt-4">
-          <button className="glowingBtn text-center rounded-xl cursor-pointer px-8 py-3">
+          <button
+            className="glowingBtn text-center rounded-xl cursor-pointer px-8 py-3"
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
             View Projects
           </button>
           <button className="text-center border border-[#A0A0A0] rounded-xl px-6 py-3 cursor-pointer hover:bg-[#00FFF0] hover:text-[#0F1115] transition-all duration-300">
@@ -33,7 +42,7 @@ function HeroSection() {
           height={400}
           width={350}
           className="lg:h-[500px] lg:w-[450px]"
-          quality={100}
+          quality={75}
         />
       </div>
     </div>
